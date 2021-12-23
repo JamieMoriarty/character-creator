@@ -11,12 +11,14 @@
   */
     margin-bottom: 32px;
     overflow-x: auto;
+    position: relative;
 }
 
 .title {
     margin: 0;
     /* Optical centering */
     margin-bottom: -4px;
+    position: sticky;
 }
 
 .metadata {
