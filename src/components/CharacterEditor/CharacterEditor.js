@@ -26,6 +26,10 @@ function App() {
                         Customize your character's look and style using the controls below. What sort of adventure will you embark on?{" "}
                     </p>
                 </header>
+
+                <div className={styles.characterWrapper}>
+                    <Character body={body} head={head} face={face} accessory={accessory} skinColor={skinColor} clothesColor={clothesColor} />
+                </div>
                 <div className={styles.controlColumn}>
                     <ControlPane title="Bodies" options={bodyOptions} currentOption={body} handleSelectOption={setBody} />
                     <ControlPane title="Heads" options={headOptions} currentOption={head} handleSelectOption={setHead} />
@@ -40,10 +44,6 @@ function App() {
                     />
                 </div>
             </MaxWidthWrapper>
-
-            <div className={styles.characterWrapper}>
-                <Character body={body} head={head} face={face} accessory={accessory} skinColor={skinColor} clothesColor={clothesColor} />
-            </div>
         </main>
     );
 }
